@@ -1,0 +1,338 @@
+1.5074 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+19.8633 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+21.9483 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F157E5B040>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F15D8A37F0>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.9484 	EXP 	window1: mouseVisible = True
+21.9484 	EXP 	window1: mouseVisible = False
+21.9484 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+21.9484 	EXP 	window1: recordFrameIntervals = False
+22.1142 	EXP 	window1: recordFrameIntervals = True
+22.2977 	EXP 	Screen (0) actual frame rate measured at 60.37Hz
+22.2977 	EXP 	window1: recordFrameIntervals = False
+25.0905 	EXP 	Created start_text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='RTL', name='start_text_1', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+25.0931 	EXP 	Created start_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='RTL', name='start_text_2', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.25]), rgb=UNKNOWN, text='.ליחתהל ליבשב חוורה שקמ לע יצחל', units='height', win=Window(...), wrapWidth=1)
+25.0961 	EXP 	window1: mouseVisible = True
+25.2995 	EXP 	Created example_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='Open Sans', granularity=1.0, labelColor=None, labelHeight=0.05, labelWrapWidth=None, labels=(1, 2, 3, 4, 5, 6, 7), lineColor=None, markerColor=None, name='example_slider', opacity=None, ori=0.0, pos=array([0., 0.]), readOnly=False, self=UNKNOWN, size=array([1.  , 0.04]), startValue=4, style='radio', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+25.3222 	EXP 	Created fixation_point = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.14, italic=False, languageStyle='LTR', name='fixation_point', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+25.3265 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image=None, interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.8, 0.6]), texRes=128.0, units='height', win=Window(...))
+25.3430 	EXP 	Created rating_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='RTL', name='rating_text', opacity=1.0, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+25.3473 	EXP 	Created warning_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1, -1, -1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.04, italic=False, languageStyle='RTL', name='warning_text', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='גוריד ירחב אנא', units='height', win=Window(...), wrapWidth=1)
+25.3485 	EXP 	window1: mouseVisible = True
+25.4890 	EXP 	Created rating_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-2, fillColor=None, flip=False, font='Open Sans', granularity=1.0, labelColor=None, labelHeight=0.05, labelWrapWidth=None, labels=(1, 2, 3, 4, 5, 6, 7), lineColor=None, markerColor=None, name='rating_slider', opacity=None, ori=0.0, pos=array([0., 0.]), readOnly=False, self=UNKNOWN, size=array([1.  , 0.04]), startValue=None, style='radio', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='height', win=Window(...))
+25.5216 	EXP 	window1: mouseVisible = True
+25.5342 	EXP 	Created finish_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='RTL', name='finish_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='!תופתתשהה לע הבר הדות', units='height', win=Window(...), wrapWidth=1)
+25.5772 	EXP 	example_slider: autoLog = True
+25.5772 	EXP 	example_slider: markerPos = 4
+25.5772 	EXP 	example_slider: styleTweaks = []
+25.5772 	EXP 	example_slider: styleTweaks = []
+25.5772 	EXP 	example_slider: styleTweaks = []
+25.5772 	EXP 	example_slider: styleTweaks = []
+25.5772 	EXP 	example_slider: contrast = 1.0
+25.5772 	EXP 	example_slider: autoLog = True
+25.5772 	EXP 	rating_slider: autoLog = True
+25.5772 	EXP 	rating_slider: markerPos = None
+25.5772 	EXP 	rating_slider: styleTweaks = []
+25.5772 	EXP 	rating_slider: styleTweaks = []
+25.5772 	EXP 	rating_slider: styleTweaks = []
+25.5772 	EXP 	rating_slider: styleTweaks = []
+25.5772 	EXP 	rating_slider: contrast = 1.0
+25.5772 	EXP 	rating_slider: autoLog = True
+25.5772 	EXP 	example_slider: markerPos = None
+25.5772 	EXP 	example_slider: markerPos = 4
+25.5772 	EXP 	start_text_1: autoDraw = True
+25.5772 	EXP 	start_text_2: autoDraw = True
+25.5772 	EXP 	example_slider: autoDraw = True
+45.8626 	DATA 	Mouse: Left button down, pos=(960,540)
+45.8768 	EXP 	example_slider: markerPos = 4.0
+45.8937 	EXP 	example_slider: markerPos = 4.0
+45.9101 	EXP 	example_slider: markerPos = 4.0
+45.9270 	EXP 	example_slider: markerPos = 4.0
+45.9433 	EXP 	example_slider: markerPos = 4.0
+45.9605 	EXP 	example_slider: markerPos = 4.0
+45.9769 	EXP 	example_slider: markerPos = 4.0
+45.9935 	EXP 	example_slider: markerPos = 4.0
+46.0104 	EXP 	example_slider: markerPos = 4.0
+46.0269 	EXP 	example_slider: markerPos = 4.0
+46.0434 	EXP 	example_slider: markerPos = 4.0
+46.0600 	EXP 	example_slider: markerPos = 4.0
+46.0769 	EXP 	example_slider: markerPos = 4.0
+46.0783 	DATA 	Mouse:  Left button up, pos=(960,540)
+46.0937 	EXP 	example_slider: markerPos = 4.0
+47.5798 	EXP 	Created sequence: random, trialTypes=1, nReps=18, seed=None
+47.5800 	EXP 	New trial (rep=0, index=0): None
+47.6889 	DATA 	Keypress: space
+47.6890 	DATA 	Keypress: 1
+47.6901 	EXP 	start_text_1: autoDraw = False
+47.6901 	EXP 	start_text_2: autoDraw = False
+47.6901 	EXP 	example_slider: autoDraw = False
+47.6901 	EXP 	fixation_point: autoDraw = True
+49.6746 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+49.6748 	EXP 	New trial (rep=0, index=0): None
+49.7142 	EXP 	fixation_point: autoDraw = False
+49.7142 	EXP 	fixation_point: autoDraw = False
+49.7142 	EXP 	image: image = 'images/Nophone_3.jpg'
+49.7142 	EXP 	image: autoDraw = True
+53.7043 	EXP 	New trial (rep=1, index=0): None
+53.7349 	EXP 	image: autoDraw = False
+53.7349 	EXP 	image: image = 'images/Nophone_6.jpg'
+53.7349 	EXP 	image: autoDraw = True
+57.7008 	EXP 	New trial (rep=2, index=0): None
+57.7178 	EXP 	image: autoDraw = False
+57.7178 	EXP 	image: image = 'images/Nophone_10.jpg'
+57.7178 	EXP 	image: autoDraw = True
+61.6978 	EXP 	New trial (rep=3, index=0): None
+61.7145 	EXP 	image: autoDraw = False
+61.7145 	EXP 	image: image = 'images/Nophone_11.jpg'
+61.7145 	EXP 	image: autoDraw = True
+65.6937 	EXP 	New trial (rep=4, index=0): None
+65.7118 	EXP 	image: autoDraw = False
+65.7118 	EXP 	image: image = 'images/Nophone_5.jpg'
+65.7118 	EXP 	image: autoDraw = True
+69.7061 	EXP 	image: autoDraw = False
+69.7061 	EXP 	rating_slider: markerPos = None
+69.7061 	EXP 	rating_slider: markerPos = None
+69.7061 	EXP 	rating_text: autoDraw = True
+69.7061 	EXP 	rating_slider: autoDraw = True
+77.4584 	DATA 	Mouse: Left button down, pos=(955,532)
+77.4830 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.4994 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.5157 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.5326 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.5491 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.5666 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.5824 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.5992 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.6158 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.6325 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.6491 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.6658 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.6826 	EXP 	rating_slider: markerPos = 3.9722222222222223
+77.6830 	DATA 	Mouse:  Left button up, pos=(955,532)
+77.6991 	EXP 	rating_slider: markerPos = 4.0
+79.0317 	DATA 	Mouse: Left button down, pos=(967,182)
+79.1388 	EXP 	New trial (rep=1, index=0): None
+79.2468 	DATA 	Keypress: 1
+79.2489 	DATA 	Keypress: 2
+79.2498 	DATA 	Mouse:  Left button up, pos=(967,182)
+79.2512 	EXP 	rating_text: autoDraw = False
+79.2512 	EXP 	warning_text: autoDraw = False
+79.2512 	EXP 	rating_slider: autoDraw = False
+79.2512 	EXP 	fixation_point: autoDraw = True
+81.2470 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+81.2471 	EXP 	New trial (rep=0, index=0): None
+81.2815 	EXP 	fixation_point: autoDraw = False
+81.2815 	EXP 	image: image = 'images/Phone_on_27.jpg'
+81.2815 	EXP 	image: autoDraw = True
+85.2600 	EXP 	New trial (rep=1, index=0): None
+85.3000 	EXP 	image: autoDraw = False
+85.3000 	EXP 	image: image = 'images/Phone_on_28.jpg'
+85.3000 	EXP 	image: autoDraw = True
+89.2571 	EXP 	New trial (rep=2, index=0): None
+89.2991 	EXP 	image: autoDraw = False
+89.2991 	EXP 	image: image = 'images/Phone_on_12.jpg'
+89.2991 	EXP 	image: autoDraw = True
+93.2532 	EXP 	New trial (rep=3, index=0): None
+93.2825 	EXP 	image: autoDraw = False
+93.2825 	EXP 	image: image = 'images/Phone_on_24.jpg'
+93.2825 	EXP 	image: autoDraw = True
+97.2498 	EXP 	New trial (rep=4, index=0): None
+97.2858 	EXP 	image: autoDraw = False
+97.2858 	EXP 	image: image = 'images/Phone_on_11.jpg'
+97.2858 	EXP 	image: autoDraw = True
+101.2619 	EXP 	image: autoDraw = False
+101.2619 	EXP 	rating_slider: markerPos = None
+101.2619 	EXP 	rating_slider: markerPos = None
+101.2619 	EXP 	rating_text: autoDraw = True
+101.2619 	EXP 	rating_slider: autoDraw = True
+104.8089 	DATA 	Mouse: Left button down, pos=(956,557)
+104.8256 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.8421 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.8590 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.8754 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.8924 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.9089 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.9255 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.9422 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.9588 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.9752 	EXP 	rating_slider: markerPos = 3.977777777777778
+104.9922 	EXP 	rating_slider: markerPos = 3.977777777777778
+105.0091 	EXP 	rating_slider: markerPos = 3.977777777777778
+105.0252 	EXP 	rating_slider: markerPos = 3.977777777777778
+105.0350 	DATA 	Mouse:  Left button up, pos=(956,557)
+105.0420 	EXP 	rating_slider: markerPos = 3.977777777777778
+105.0585 	EXP 	rating_slider: markerPos = 4.0
+105.8746 	DATA 	Mouse: Left button down, pos=(956,200)
+105.9832 	EXP 	New trial (rep=2, index=0): None
+106.0912 	DATA 	Keypress: 2
+106.0913 	DATA 	Keypress: 1
+106.0925 	EXP 	rating_text: autoDraw = False
+106.0925 	EXP 	warning_text: autoDraw = False
+106.0925 	EXP 	rating_slider: autoDraw = False
+106.0925 	EXP 	fixation_point: autoDraw = True
+106.1089 	DATA 	Mouse:  Left button up, pos=(956,200)
+108.0906 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+108.0909 	EXP 	New trial (rep=0, index=0): None
+108.1131 	EXP 	fixation_point: autoDraw = False
+108.1131 	EXP 	fixation_point: autoDraw = False
+108.1131 	EXP 	image: image = 'images/Nophone_12.jpg'
+108.1131 	EXP 	image: autoDraw = True
+112.1035 	EXP 	New trial (rep=1, index=0): None
+112.1245 	EXP 	image: autoDraw = False
+112.1245 	EXP 	image: image = 'images/Nophone_13.jpg'
+112.1245 	EXP 	image: autoDraw = True
+116.1005 	EXP 	New trial (rep=2, index=0): None
+116.1305 	EXP 	image: autoDraw = False
+116.1305 	EXP 	image: image = 'images/Nophone_23.jpg'
+116.1305 	EXP 	image: autoDraw = True
+120.0965 	EXP 	New trial (rep=3, index=0): None
+120.1271 	EXP 	image: autoDraw = False
+120.1271 	EXP 	image: image = 'images/Nophone_27.jpg'
+120.1271 	EXP 	image: autoDraw = True
+124.0937 	EXP 	New trial (rep=4, index=0): None
+124.1114 	EXP 	image: autoDraw = False
+124.1114 	EXP 	image: image = 'images/Nophone_22.jpg'
+124.1114 	EXP 	image: autoDraw = True
+128.1217 	EXP 	image: autoDraw = False
+128.1217 	EXP 	rating_slider: markerPos = None
+128.1217 	EXP 	rating_slider: markerPos = None
+128.1217 	EXP 	rating_text: autoDraw = True
+128.1217 	EXP 	rating_slider: autoDraw = True
+131.3040 	DATA 	Keypress: num_1
+137.6972 	DATA 	Mouse: Left button down, pos=(749,529)
+137.7133 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.7303 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.7467 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.7636 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.7800 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.7966 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.8135 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.8299 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.8469 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.8633 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.8803 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.8966 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.9136 	EXP 	rating_slider: markerPos = 2.827777777777778
+137.9141 	DATA 	Mouse:  Left button up, pos=(749,529)
+137.9298 	EXP 	rating_slider: markerPos = 3.0
+138.8064 	DATA 	Mouse: Left button down, pos=(972,235)
+138.9190 	EXP 	New trial (rep=3, index=0): None
+139.0259 	DATA 	Keypress: 1
+139.0260 	DATA 	Keypress: 1
+139.0261 	DATA 	Mouse:  Left button up, pos=(972,235)
+139.0272 	EXP 	rating_text: autoDraw = False
+139.0272 	EXP 	warning_text: autoDraw = False
+139.0272 	EXP 	rating_slider: autoDraw = False
+139.0272 	EXP 	fixation_point: autoDraw = True
+141.0114 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+141.0115 	EXP 	New trial (rep=0, index=0): None
+141.0432 	EXP 	fixation_point: autoDraw = False
+141.0432 	EXP 	fixation_point: autoDraw = False
+141.0432 	EXP 	image: image = 'images/Nophone_14.jpg'
+141.0432 	EXP 	image: autoDraw = True
+145.0421 	EXP 	New trial (rep=1, index=0): None
+145.0715 	EXP 	image: autoDraw = False
+145.0715 	EXP 	image: image = 'images/Nophone_26.jpg'
+145.0715 	EXP 	image: autoDraw = True
+149.0383 	EXP 	New trial (rep=2, index=0): None
+149.0638 	EXP 	image: autoDraw = False
+149.0638 	EXP 	image: image = 'images/Nophone_1.jpg'
+149.0638 	EXP 	image: autoDraw = True
+153.0341 	EXP 	New trial (rep=3, index=0): None
+153.0509 	EXP 	image: autoDraw = False
+153.0509 	EXP 	image: image = 'images/Nophone_21.jpg'
+153.0509 	EXP 	image: autoDraw = True
+157.0307 	EXP 	New trial (rep=4, index=0): None
+157.0476 	EXP 	image: autoDraw = False
+157.0476 	EXP 	image: image = 'images/Nophone_17.jpg'
+157.0476 	EXP 	image: autoDraw = True
+161.0430 	EXP 	image: autoDraw = False
+161.0430 	EXP 	rating_slider: markerPos = None
+161.0430 	EXP 	rating_slider: markerPos = None
+161.0430 	EXP 	rating_text: autoDraw = True
+161.0430 	EXP 	rating_slider: autoDraw = True
+199.0102 	DATA 	Mouse: Left button down, pos=(974,535)
+199.0267 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.0433 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.0599 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.0767 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.0932 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.1100 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.1266 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.1431 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.1600 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.1764 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.1931 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.2097 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.2268 	EXP 	rating_slider: markerPos = 4.0777777777777775
+199.2275 	DATA 	Mouse:  Left button up, pos=(974,535)
+199.2431 	EXP 	rating_slider: markerPos = 4.0
+200.3838 	DATA 	Mouse: Left button down, pos=(1019,278)
+200.6088 	DATA 	Mouse:  Left button up, pos=(1019,278)
+201.2990 	DATA 	Mouse: Left button down, pos=(1017,248)
+201.4179 	EXP 	New trial (rep=4, index=0): None
+201.5243 	DATA 	Keypress: 1
+201.5244 	DATA 	Keypress: 3
+201.5245 	DATA 	Mouse:  Left button up, pos=(1017,248)
+201.5256 	EXP 	rating_text: autoDraw = False
+201.5256 	EXP 	warning_text: autoDraw = False
+201.5256 	EXP 	rating_slider: autoDraw = False
+201.5256 	EXP 	fixation_point: autoDraw = True
+203.5235 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+203.5237 	EXP 	New trial (rep=0, index=0): None
+203.5473 	EXP 	fixation_point: autoDraw = False
+203.5473 	EXP 	fixation_point: autoDraw = False
+203.5473 	EXP 	image: image = 'images/Phone_off_21.jpg'
+203.5473 	EXP 	image: autoDraw = True
+207.5373 	EXP 	New trial (rep=1, index=0): None
+207.5659 	EXP 	image: autoDraw = False
+207.5659 	EXP 	image: image = 'images/Phone_off_20.jpg'
+207.5659 	EXP 	image: autoDraw = True
+211.5332 	EXP 	New trial (rep=2, index=0): None
+211.5599 	EXP 	image: autoDraw = False
+211.5599 	EXP 	image: image = 'images/Phone_off_25.jpg'
+211.5599 	EXP 	image: autoDraw = True
+215.5305 	EXP 	New trial (rep=3, index=0): None
+215.5665 	EXP 	image: autoDraw = False
+215.5665 	EXP 	image: image = 'images/Phone_off_26.jpg'
+215.5665 	EXP 	image: autoDraw = True
+219.5264 	EXP 	New trial (rep=4, index=0): None
+219.5459 	EXP 	image: autoDraw = False
+219.5459 	EXP 	image: image = 'images/Phone_off_7.jpg'
+219.5459 	EXP 	image: autoDraw = True
+223.5552 	EXP 	image: autoDraw = False
+223.5552 	EXP 	rating_slider: markerPos = None
+223.5552 	EXP 	rating_slider: markerPos = None
+223.5552 	EXP 	rating_text: autoDraw = True
+223.5552 	EXP 	rating_slider: autoDraw = True
+322.0796 	DATA 	Mouse: Left button down, pos=(940,563)
+322.1029 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.1194 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.1359 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.1530 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.1693 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.1861 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.2026 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.2192 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.2360 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.2531 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.2692 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.2861 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.3026 	EXP 	rating_slider: markerPos = 3.8888888888888893
+322.3030 	DATA 	Mouse:  Left button up, pos=(940,563)
+322.3193 	EXP 	rating_slider: markerPos = 4.0
+325.1344 	DATA 	Mouse: Left button down, pos=(988,237)
+325.2411 	EXP 	New trial (rep=5, index=0): None
+325.3550 	DATA 	Keypress: 3
+325.3558 	DATA 	Keypress: 3
+325.3562 	DATA 	Mouse:  Left button up, pos=(988,237)
+325.3588 	EXP 	rating_text: autoDraw = False
+325.3588 	EXP 	warning_text: autoDraw = False
+325.3588 	EXP 	rating_slider: autoDraw = False
+325.3588 	EXP 	fixation_point: autoDraw = True
+327.3487 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+327.3489 	EXP 	New trial (rep=0, index=0): None
+327.3905 	EXP 	fixation_point: autoDraw = False
+327.3905 	EXP 	fixation_point: autoDraw = False
+327.3905 	EXP 	image: image = 'images/Phone_off_3.jpg'
+327.3905 	EXP 	image: autoDraw = True
+330.2001 	DATA 	Keypress: escape
+330.5770 	EXP 	window1: mouseVisible = True

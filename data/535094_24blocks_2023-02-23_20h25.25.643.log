@@ -1,0 +1,14 @@
+1.7609 	ERROR 	Support for the `sounddevice` audio backend is not available this session. Please install `psychopy-sounddevice` and restart the session to enable support.
+4.8176 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F06D2D2730>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F06D2D2700>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F06D2D25E0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F073072460>, multiSample=False, name='window1', numSamples=2, pos=(0, 0), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.8176 	EXP 	window1: mouseVisible = True
+4.8176 	EXP 	window1: backgroundImage = ''
+4.8177 	EXP 	window1: backgroundFit = 'none'
+4.8177 	EXP 	window1: mouseVisible = False
+4.8177 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+4.8177 	EXP 	window1: recordFrameIntervals = False
+4.8591 	EXP 	window1: recordFrameIntervals = True
+4.9053 	EXP 	Screen (0) actual frame rate measured at 238.12Hz
+4.9053 	EXP 	window1: recordFrameIntervals = False
+6.6948 	EXP 	Created start_text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='RTL', name='start_text_1', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.6982 	EXP 	Created start_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='RTL', name='start_text_2', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.25]), rgb=UNKNOWN, text='Press the space bar to start.', units='height', win=Window(...), wrapWidth=1)
+6.7773 	EXP 	window1: mouseVisible = True

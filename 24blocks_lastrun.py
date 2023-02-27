@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2023.1.0),
-    on February 23, 2023, at 17:32
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on February 14, 2023, at 11:34
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -14,8 +14,6 @@ If you publish work using this script the most relevant publication is:
 # --- Import packages ---
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import plugins
-plugins.activatePlugins()
 from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
@@ -30,11 +28,6 @@ import sys  # to get file system encoding
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
-# Run 'Before Experiment' code from iMotions_key
-import win32com.client as comclt
-wsh= comclt.Dispatch("WScript.Shell")
-
-iMotionsKey = "w"
 # Run 'Before Experiment' code from recording_finish
 # Recording experiment start
 experimentStart = core.getTime()
@@ -46,11 +39,11 @@ experimentStart = core.getTime()
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 # Store info about the experiment session
-psychopyVersion = '2023.1.0'
-expName = '24blocks'  # from the Builder filename that created this script
+psychopyVersion = '2022.2.4'
+expName = 'Smart Mom'  # from the Builder filename that created this script
 expInfo = {
-    'participant': f"{randint(0, 999999):06.0f}",
-    'session': '001',
+    'participant': '',
+    'session': '',
 }
 # --- Show participant info dialog --
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -61,12 +54,12 @@ expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expName, expInfo['participant'], expInfo['date'])
 
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\chenb\\Desktop\\Cue Reactivity\\Cue-Reactivity-Psycholoy-Experiment\\24blocks_lastrun.py',
+    originPath='C:\\Users\\user\\Desktop\\Smart Mom\\Psychopy Experiment\\Smart Mom_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -80,10 +73,9 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # --- Setup the Window ---
 win = visual.Window(
-    size=[1920, 1080], fullscr=True, screen=0, 
+    size=[1536, 864], fullscr=True, screen=0, 
     winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
-    backgroundImage='', backgroundFit='none',
     blendMode='avg', useFBO=True, 
     units='height')
 win.mouseVisible = False
@@ -124,8 +116,8 @@ start_text_2 = visual.TextStim(win=win, name='start_text_2',
     languageStyle='RTL',
     depth=-1.0);
 example_slider = visual.Slider(win=win, name='example_slider',
-    startValue=4, size=(1.0, 0.04), pos=(0, 0), units=win.units,
-    labels=(1, 2, 3, 4, 5, 6, 7),ticks=None, granularity=1,
+    startValue=4, size=(1.0, 0.04), pos=(0, 0), units=None,
+    labels=(1, 2, 3, 4, 5, 6, 7), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='radio', styleTweaks=(), opacity=None,
     labelColor='White', markerColor=[1.0000, -1.0000, -1.0000], lineColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.05,
@@ -133,6 +125,9 @@ example_slider = visual.Slider(win=win, name='example_slider',
 key_space = keyboard.Keyboard()
 
 # --- Initialize components for Routine "create_data" ---
+# Run 'Begin Experiment' code from iMotions_init
+import pyautogui
+
 
 # --- Initialize components for Routine "reset_data" ---
 
@@ -157,7 +152,7 @@ image = visual.ImageStim(
 
 # --- Initialize components for Routine "rating" ---
 rating_text = visual.TextStim(win=win, name='rating_text',
-    text='אנא דרגי באיזו מידה את \nמרגישה צורך להשתמש בטלפון שלך כעת',
+    text='באיזו מידה את מרגישה צורך להשתמש בפלאפון שלך כעת?',
     font='Open Sans',
     pos=(0, 0.35), height=0.04, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -171,8 +166,8 @@ warning_text = visual.TextStim(win=win, name='warning_text',
     languageStyle='RTL',
     depth=-1.0);
 rating_slider = visual.Slider(win=win, name='rating_slider',
-    startValue=None, size=(1.0, 0.04), pos=(0, 0), units=win.units,
-    labels=(1, 2, 3, 4, 5, 6, 7),ticks=None, granularity=1,
+    startValue=None, size=(1.0, 0.04), pos=(0, 0), units=None,
+    labels=(1, 2, 3, 4, 5, 6, 7), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
     style='radio', styleTweaks=(), opacity=None,
     labelColor='White', markerColor=[1.0000, -1.0000, -1.0000], lineColor='White', colorSpace='rgb',
     font='Open Sans', labelHeight=0.05,
@@ -188,8 +183,7 @@ rating_button = visual.ButtonStim(win,
     bold=True, italic=False,
     padding=None,
     anchor='center',
-    name='rating_button',
-    depth=-3
+    name='rating_button'
 )
 rating_button.buttonClock = core.Clock()
 
@@ -201,6 +195,7 @@ finish_text = visual.TextStim(win=win, name='finish_text',
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='RTL',
     depth=0.0);
+key_finish = keyboard.Keyboard()
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -208,6 +203,7 @@ routineTimer = core.Clock()  # to track time remaining of each (possibly non-sli
 
 # --- Prepare to start Routine "start" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 example_slider.reset()
 key_space.keys = []
@@ -228,7 +224,6 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
 # --- Run Routine "start" ---
-routineForceEnded = not continueRoutine
 while continueRoutine:
     # get current time
     t = routineTimer.getTime()
@@ -238,70 +233,40 @@ while continueRoutine:
     # update/draw components on each frame
     
     # *start_text_1* updates
-    
-    # if start_text_1 is starting this frame...
     if start_text_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
         start_text_1.frameNStart = frameN  # exact frame index
         start_text_1.tStart = t  # local t and not account for scr refresh
         start_text_1.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(start_text_1, 'tStartRefresh')  # time at next scr refresh
-        # update status
-        start_text_1.status = STARTED
         start_text_1.setAutoDraw(True)
     
-    # if start_text_1 is active this frame...
-    if start_text_1.status == STARTED:
-        # update params
-        pass
-    
     # *start_text_2* updates
-    
-    # if start_text_2 is starting this frame...
     if start_text_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
         start_text_2.frameNStart = frameN  # exact frame index
         start_text_2.tStart = t  # local t and not account for scr refresh
         start_text_2.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(start_text_2, 'tStartRefresh')  # time at next scr refresh
-        # update status
-        start_text_2.status = STARTED
         start_text_2.setAutoDraw(True)
     
-    # if start_text_2 is active this frame...
-    if start_text_2.status == STARTED:
-        # update params
-        pass
-    
     # *example_slider* updates
-    
-    # if example_slider is starting this frame...
     if example_slider.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
         example_slider.frameNStart = frameN  # exact frame index
         example_slider.tStart = t  # local t and not account for scr refresh
         example_slider.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(example_slider, 'tStartRefresh')  # time at next scr refresh
-        # update status
-        example_slider.status = STARTED
         example_slider.setAutoDraw(True)
-    
-    # if example_slider is active this frame...
-    if example_slider.status == STARTED:
-        # update params
-        pass
     
     # *key_space* updates
     waitOnFlip = False
-    
-    # if key_space is starting this frame...
     if key_space.status == NOT_STARTED and tThisFlip >= 1-frameTolerance:
         # keep track of start time/frame for later
         key_space.frameNStart = frameN  # exact frame index
         key_space.tStart = t  # local t and not account for scr refresh
         key_space.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(key_space, 'tStartRefresh')  # time at next scr refresh
-        # update status
         key_space.status = STARTED
         # keyboard checking is just starting
         waitOnFlip = True
@@ -343,6 +308,7 @@ routineTimer.reset()
 
 # --- Prepare to start Routine "create_data" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 # Run 'Begin Routine' code from data_creator
 import random
@@ -405,7 +371,6 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
 # --- Run Routine "create_data" ---
-routineForceEnded = not continueRoutine
 while continueRoutine:
     # get current time
     t = routineTimer.getTime()
@@ -436,8 +401,6 @@ while continueRoutine:
 for thisComponent in create_dataComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-# Run 'End Routine' code from iMotions_key
-wsh.SendKeys(iMotionsKey)
 # the Routine "create_data" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -462,6 +425,7 @@ for thisBlock_loop in block_loop:
     
     # --- Prepare to start Routine "reset_data" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
     # Run 'Begin Routine' code from reset_variables
     # Initiate current block variable
@@ -469,6 +433,22 @@ for thisBlock_loop in block_loop:
     
     # Initiate the images order variable
     images_in_block = []
+    
+    # Run 'Begin Routine' code from iMotions_start
+    blockType = blocks_order[block_loop.thisN]
+    
+    
+    if currentBlock == 'stim_netural':
+        pyautogui.press('1')
+        print(111)
+        
+    elif currentBlock == 'stim_phone_on':
+        pyautogui.press('2')
+        print(222)
+         
+    elif currentBlock == 'stim_phone_off':
+        pyautogui.press('3')
+        print(333)
     # keep track of which components have finished
     reset_dataComponents = []
     for thisComponent in reset_dataComponents:
@@ -484,7 +464,6 @@ for thisBlock_loop in block_loop:
     frameN = -1
     
     # --- Run Routine "reset_data" ---
-    routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -520,6 +499,7 @@ for thisBlock_loop in block_loop:
     
     # --- Prepare to start Routine "fixation" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
     # keep track of which components have finished
     fixationComponents = [fixation_point]
@@ -536,7 +516,6 @@ for thisBlock_loop in block_loop:
     frameN = -1
     
     # --- Run Routine "fixation" ---
-    routineForceEnded = not continueRoutine
     while continueRoutine and routineTimer.getTime() < 2.0:
         # get current time
         t = routineTimer.getTime()
@@ -546,32 +525,19 @@ for thisBlock_loop in block_loop:
         # update/draw components on each frame
         
         # *fixation_point* updates
-        
-        # if fixation_point is starting this frame...
         if fixation_point.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
             fixation_point.frameNStart = frameN  # exact frame index
             fixation_point.tStart = t  # local t and not account for scr refresh
             fixation_point.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(fixation_point, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            fixation_point.status = STARTED
             fixation_point.setAutoDraw(True)
-        
-        # if fixation_point is active this frame...
-        if fixation_point.status == STARTED:
-            # update params
-            pass
-        
-        # if fixation_point is stopping this frame...
         if fixation_point.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
             if tThisFlipGlobal > fixation_point.tStartRefresh + 2-frameTolerance:
                 # keep track of stop time/frame for later
                 fixation_point.tStop = t  # not accounting for scr refresh
                 fixation_point.frameNStop = frameN  # exact frame index
-                # update status
-                fixation_point.status = FINISHED
                 fixation_point.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
@@ -623,6 +589,7 @@ for thisBlock_loop in block_loop:
         
         # --- Prepare to start Routine "images" ---
         continueRoutine = True
+        routineForceEnded = False
         # update component parameters for each repeat
         # Run 'Begin Routine' code from display_image
         if currentBlock == 'stim_netural':
@@ -662,8 +629,7 @@ for thisBlock_loop in block_loop:
         frameN = -1
         
         # --- Run Routine "images" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 0.1:
+        while continueRoutine and routineTimer.getTime() < 4.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -672,32 +638,19 @@ for thisBlock_loop in block_loop:
             # update/draw components on each frame
             
             # *image* updates
-            
-            # if image is starting this frame...
             if image.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
                 image.frameNStart = frameN  # exact frame index
                 image.tStart = t  # local t and not account for scr refresh
                 image.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(image, 'tStartRefresh')  # time at next scr refresh
-                # update status
-                image.status = STARTED
                 image.setAutoDraw(True)
-            
-            # if image is active this frame...
-            if image.status == STARTED:
-                # update params
-                pass
-            
-            # if image is stopping this frame...
             if image.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image.tStartRefresh + 0.1-frameTolerance:
+                if tThisFlipGlobal > image.tStartRefresh + 4-frameTolerance:
                     # keep track of stop time/frame for later
                     image.tStop = t  # not accounting for scr refresh
                     image.frameNStop = frameN  # exact frame index
-                    # update status
-                    image.status = FINISHED
                     image.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
@@ -726,16 +679,15 @@ for thisBlock_loop in block_loop:
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-0.100000)
+            routineTimer.addTime(-4.000000)
     # completed 5.0 repeats of 'give_images_loop'
     
     
     # --- Prepare to start Routine "rating" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
     rating_slider.reset()
-    # reset rating_button to account for continued clicks & clear times on/off
-    rating_button.reset()
     # Run 'Begin Routine' code from marker_size
     rating_slider.marker.size = [0.03, 0.03]
     # Run 'Begin Routine' code from show_warning
@@ -757,7 +709,6 @@ for thisBlock_loop in block_loop:
     frameN = -1
     
     # --- Run Routine "rating" ---
-    routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -767,91 +718,57 @@ for thisBlock_loop in block_loop:
         # update/draw components on each frame
         
         # *rating_text* updates
-        
-        # if rating_text is starting this frame...
         if rating_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
             rating_text.frameNStart = frameN  # exact frame index
             rating_text.tStart = t  # local t and not account for scr refresh
             rating_text.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(rating_text, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            rating_text.status = STARTED
             rating_text.setAutoDraw(True)
         
-        # if rating_text is active this frame...
-        if rating_text.status == STARTED:
-            # update params
-            pass
-        
         # *warning_text* updates
-        
-        # if warning_text is starting this frame...
         if warning_text.status == NOT_STARTED and warning:
             # keep track of start time/frame for later
             warning_text.frameNStart = frameN  # exact frame index
             warning_text.tStart = t  # local t and not account for scr refresh
             warning_text.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(warning_text, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            warning_text.status = STARTED
             warning_text.setAutoDraw(True)
         
-        # if warning_text is active this frame...
-        if warning_text.status == STARTED:
-            # update params
-            pass
-        
         # *rating_slider* updates
-        
-        # if rating_slider is starting this frame...
         if rating_slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
             rating_slider.frameNStart = frameN  # exact frame index
             rating_slider.tStart = t  # local t and not account for scr refresh
             rating_slider.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(rating_slider, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            rating_slider.status = STARTED
             rating_slider.setAutoDraw(True)
         
-        # if rating_slider is active this frame...
-        if rating_slider.status == STARTED:
-            # update params
-            pass
         # *rating_button* updates
-        
-        # if rating_button is starting this frame...
         if rating_button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
             rating_button.frameNStart = frameN  # exact frame index
             rating_button.tStart = t  # local t and not account for scr refresh
             rating_button.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(rating_button, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            rating_button.status = STARTED
             rating_button.setAutoDraw(True)
-        
-        # if rating_button is active this frame...
         if rating_button.status == STARTED:
-            # update params
-            pass
             # check whether rating_button has been pressed
             if rating_button.isClicked:
                 if not rating_button.wasClicked:
-                    # if this is a new click, store time of first click and clicked until
-                    rating_button.timesOn.append(rating_button.buttonClock.getTime())
-                    rating_button.timesOff.append(rating_button.buttonClock.getTime())
-                elif len(rating_button.timesOff):
-                    # if click is continuing from last frame, update time of clicked until
-                    rating_button.timesOff[-1] = rating_button.buttonClock.getTime()
-                # run callback code when rating_button is clicked
+                    rating_button.timesOn.append(rating_button.buttonClock.getTime()) # store time of first click
+                    rating_button.timesOff.append(rating_button.buttonClock.getTime()) # store time clicked until
+                else:
+                    rating_button.timesOff[-1] = rating_button.buttonClock.getTime() # update time clicked until
                 if rating_slider.getRating() != None:
                     continueRoutine = False
                 else:
                     warning = True
-        # take note of whether rating_button was clicked, so that next frame we know if clicks are new
-        rating_button.wasClicked = rating_button.isClicked and rating_button.status == STARTED
+                rating_button.wasClicked = True  # if rating_button is still clicked next frame, it is not a new click
+            else:
+                rating_button.wasClicked = False  # if rating_button is clicked next frame, it is a new click
+        else:
+            rating_button.wasClicked = False  # if rating_button is clicked next frame, it is a new click
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -903,8 +820,21 @@ for thisBlock_loop in block_loop:
     elif currentBlock == 'stim_phone_off':
         phoneOffCounter+=1
         
-    # Run 'End Routine' code from iMotions
-    wsh.SendKeys(iMotionsKey)
+    # Run 'End Routine' code from iMotions_end
+    blockType = blocks_order[block_loop.thisN]
+    
+    
+    if currentBlock == 'stim_netural':
+        pyautogui.press('1')
+        print(111)
+        
+    elif currentBlock == 'stim_phone_on':
+        pyautogui.press('2')
+        print(222)
+         
+    elif currentBlock == 'stim_phone_off':
+        pyautogui.press('3')
+        print(333)
     # the Routine "rating" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
@@ -914,6 +844,7 @@ for thisBlock_loop in block_loop:
 
 # --- Prepare to start Routine "finish" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 # Run 'Begin Routine' code from recording_finish
 import statistics
@@ -959,8 +890,11 @@ thisExp.addData("ratingVariance", ratingVariance)
 
 # Create a new data line
 thisExp.nextEntry()
+key_finish.keys = []
+key_finish.rt = []
+_key_finish_allKeys = []
 # keep track of which components have finished
-finishComponents = [finish_text]
+finishComponents = [finish_text, key_finish]
 for thisComponent in finishComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -974,7 +908,6 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 frameN = -1
 
 # --- Run Routine "finish" ---
-routineForceEnded = not continueRoutine
 while continueRoutine:
     # get current time
     t = routineTimer.getTime()
@@ -984,22 +917,37 @@ while continueRoutine:
     # update/draw components on each frame
     
     # *finish_text* updates
-    
-    # if finish_text is starting this frame...
     if finish_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
         finish_text.frameNStart = frameN  # exact frame index
         finish_text.tStart = t  # local t and not account for scr refresh
         finish_text.tStartRefresh = tThisFlipGlobal  # on global time
         win.timeOnFlip(finish_text, 'tStartRefresh')  # time at next scr refresh
-        # update status
-        finish_text.status = STARTED
         finish_text.setAutoDraw(True)
     
-    # if finish_text is active this frame...
-    if finish_text.status == STARTED:
-        # update params
-        pass
+    # *key_finish* updates
+    waitOnFlip = False
+    if key_finish.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        key_finish.frameNStart = frameN  # exact frame index
+        key_finish.tStart = t  # local t and not account for scr refresh
+        key_finish.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(key_finish, 'tStartRefresh')  # time at next scr refresh
+        # add timestamp to datafile
+        thisExp.timestampOnFlip(win, 'key_finish.started')
+        key_finish.status = STARTED
+        # keyboard checking is just starting
+        waitOnFlip = True
+        win.callOnFlip(key_finish.clock.reset)  # t=0 on next screen flip
+        win.callOnFlip(key_finish.clearEvents, eventType='keyboard')  # clear events on next screen flip
+    if key_finish.status == STARTED and not waitOnFlip:
+        theseKeys = key_finish.getKeys(keyList=['space'], waitRelease=False)
+        _key_finish_allKeys.extend(theseKeys)
+        if len(_key_finish_allKeys):
+            key_finish.keys = _key_finish_allKeys[-1].name  # just the last key pressed
+            key_finish.rt = _key_finish_allKeys[-1].rt
+            # a response ends the routine
+            continueRoutine = False
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1023,6 +971,13 @@ while continueRoutine:
 for thisComponent in finishComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+# check responses
+if key_finish.keys in ['', [], None]:  # No response was made
+    key_finish.keys = None
+thisExp.addData('key_finish.keys',key_finish.keys)
+if key_finish.keys != None:  # we had a response
+    thisExp.addData('key_finish.rt', key_finish.rt)
+thisExp.nextEntry()
 # the Routine "finish" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
